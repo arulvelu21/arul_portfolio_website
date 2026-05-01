@@ -165,7 +165,7 @@ export const Contact = () => {
                   onChange={handleChange}
                   disabled={status === "loading"}
                   className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-50 placeholder-slate-500 transition-shadow disabled:opacity-50"
-                  placeholder="+91 8007496960"
+                  placeholder=""
                 />
               </div>
               <div>
