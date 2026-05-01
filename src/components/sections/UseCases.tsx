@@ -165,8 +165,8 @@ export const UseCases = () => {
   return (
     <section id="use-cases" className="py-24 relative overflow-hidden">
       {/* Subtle background gradients */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-violet-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="hidden md:block absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="hidden md:block absolute bottom-0 right-0 w-[600px] h-[600px] bg-violet-600/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header Section */}

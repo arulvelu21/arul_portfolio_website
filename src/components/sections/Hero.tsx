@@ -34,7 +34,7 @@ export const Hero = () => {
               opacity: [0.15, 0.25, 0.15],
             }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-blue-600/20 rounded-full blur-[140px]"
+            className="hidden md:block absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-blue-600/20 rounded-full blur-[140px]"
           />
           {/* Left accent */}
           <motion.div
@@ -43,7 +43,7 @@ export const Hero = () => {
               opacity: [0.1, 0.2, 0.1],
             }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-            className="absolute top-1/2 left-[15%] -translate-y-1/2 w-[500px] h-[500px] bg-violet-600/15 rounded-full blur-[120px]"
+            className="hidden md:block absolute top-1/2 left-[15%] -translate-y-1/2 w-[500px] h-[500px] bg-violet-600/15 rounded-full blur-[120px]"
           />
           {/* Right accent */}
           <motion.div
@@ -52,18 +52,18 @@ export const Hero = () => {
               opacity: [0.08, 0.18, 0.08],
             }}
             transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-            className="absolute top-[40%] right-[10%] w-[400px] h-[400px] bg-cyan-600/10 rounded-full blur-[100px]"
+            className="hidden md:block absolute top-[40%] right-[10%] w-[400px] h-[400px] bg-cyan-600/10 rounded-full blur-[100px]"
           />
           {/* Floating shapes for depth */}
           <motion.div
             animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
             transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-[20%] left-[20%] w-32 h-32 bg-blue-500/5 rounded-full blur-[40px]"
+            className="hidden md:block absolute top-[20%] left-[20%] w-32 h-32 bg-blue-500/5 rounded-full blur-[40px]"
           />
           <motion.div
             animate={{ y: [0, 15, 0], x: [0, -8, 0] }}
             transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-            className="absolute bottom-[30%] right-[25%] w-24 h-24 bg-violet-500/8 rounded-full blur-[30px]"
+            className="hidden md:block absolute bottom-[30%] right-[25%] w-24 h-24 bg-violet-500/8 rounded-full blur-[30px]"
           />
         </div>
 

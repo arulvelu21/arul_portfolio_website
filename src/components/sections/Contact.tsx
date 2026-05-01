@@ -66,7 +66,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="hidden md:block absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <SectionHeading 
