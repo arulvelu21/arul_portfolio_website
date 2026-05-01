@@ -49,7 +49,7 @@ export const Contact = () => {
       if (response.ok) {
         setStatus("success");
         setFormData({ name: "", email: "", phone: "", message: "" });
-        
+
         // Reset status after 5 seconds
         setTimeout(() => setStatus("idle"), 5000);
       } else {
@@ -69,8 +69,8 @@ export const Contact = () => {
       <div className="hidden md:block absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <SectionHeading 
-          title="Let's Build Something Intelligent" 
+        <SectionHeading
+          title="Let's Build Something Intelligent"
           subtitle="Looking for an automation & AI engineer? Let's discuss how intelligent workflows can transform your operations."
           className="items-center text-center mb-16"
         />
@@ -132,9 +132,9 @@ export const Contact = () => {
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-400 mb-1">Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
+                <input
+                  type="text"
+                  id="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -145,9 +145,9 @@ export const Contact = () => {
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-slate-400 mb-1">Email</label>
-                <input 
-                  type="email" 
-                  id="email" 
+                <input
+                  type="email"
+                  id="email"
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -158,9 +158,9 @@ export const Contact = () => {
               </div>
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-slate-400 mb-1">Phone <span className="text-slate-600 font-normal">(Optional)</span></label>
-                <input 
-                  type="tel" 
-                  id="phone" 
+                <input
+                  type="tel"
+                  id="phone"
                   value={formData.phone}
                   onChange={handleChange}
                   disabled={status === "loading"}
@@ -170,8 +170,8 @@ export const Contact = () => {
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-400 mb-1">Message</label>
-                <textarea 
-                  id="message" 
+                <textarea
+                  id="message"
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
@@ -196,9 +196,9 @@ export const Contact = () => {
                 </div>
               )}
 
-              <Button 
-                type="submit" 
-                className="w-full mt-2 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2" 
+              <Button
+                type="submit"
+                className="w-full mt-2 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 disabled={status === "loading"}
               >
                 {status === "loading" ? (

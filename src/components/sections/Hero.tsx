@@ -6,10 +6,10 @@ import { Sparkles, User } from "lucide-react";
 import Link from "next/link";
 
 const stats = [
-  { value: "10+", label: "Years in Automation & AI Systems" },
-  { value: "95%", label: "Manual Work Eliminated" },
-  { value: "3,000+", label: "Retail Systems Automated" },
-  { value: "90%", label: "Downtime Reduction" },
+  { value: "10+", label: "Years Experience", subtext: "Automation & AI Systems" },
+  { value: "95%", label: "Manual Work Reduced", subtext: "Across enterprise workflows" },
+  { value: "3,000+", label: "Systems Automated", subtext: "Retail & enterprise scale" },
+  { value: "90%", label: "Downtime Reduction", subtext: "Through automation & monitoring" },
 ];
 
 const fadeUp = {
@@ -155,15 +155,18 @@ export const Hero = () => {
             {stats.map((stat, index) => (
               <motion.div
                 key={index}
-                whileHover={{ y: -4, boxShadow: "0 8px 40px rgba(59, 130, 246, 0.1)" }}
+                whileHover={{ y: -4, boxShadow: "0 8px 40px rgba(59, 130, 246, 0.12)" }}
                 transition={{ duration: 0.25 }}
-                className="stat-card p-4 rounded-2xl text-center cursor-default"
+                className="stat-card p-5 rounded-2xl text-center cursor-default hover:border-blue-500/20"
               >
-                <div className="text-2xl md:text-3xl font-extrabold hero-gradient-text mb-1">
+                <div className="text-3xl md:text-4xl font-extrabold hero-gradient-text mb-1.5">
                   {stat.value}
                 </div>
-                <div className="text-xs md:text-sm text-slate-400 font-medium leading-tight">
+                <div className="text-sm md:text-base text-slate-200 font-semibold leading-tight mb-1">
                   {stat.label}
+                </div>
+                <div className="text-[11px] md:text-xs text-slate-500 font-medium">
+                  {stat.subtext}
                 </div>
               </motion.div>
             ))}

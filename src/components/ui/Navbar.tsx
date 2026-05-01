@@ -8,8 +8,8 @@ import Link from "next/link";
 const navLinks = [
   { name: "About", href: "/about" },
   { name: "Skills", href: "/skills" },
-  { name: "Use Cases", href: "/use-cases" },
-  { name: "Projects", href: "/projects" },
+  { name: "AI Projects", href: "/use-cases" },
+  { name: "Automation Projects", href: "/projects" },
 ];
 
 export const Navbar = () => {

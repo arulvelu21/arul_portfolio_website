@@ -89,34 +89,6 @@ const SkillCard: React.FC<SkillCardProps> = ({
   );
 };
 
-const StatsPanel = () => {
-  const stats = [
-    { value: "10+", label: "Years Experience" },
-    { value: "50+", label: "Technologies" },
-    { value: "100+", label: "Automation Projects" },
-    { value: "3,000+", label: "Systems Automated" },
-  ];
-
-  return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8 lg:mt-0 lg:ml-auto">
-      {stats.map((stat, i) => (
-        <motion.div
-          key={i}
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
-          className="bg-slate-800/40 border border-slate-700/50 rounded-xl p-4 text-center hover:bg-slate-800/60 transition-colors"
-        >
-          <div className="text-2xl font-extrabold hero-gradient-text mb-1">
-            {stat.value}
-          </div>
-          <div className="text-xs text-slate-400 font-medium">{stat.label}</div>
-        </motion.div>
-      ))}
-    </div>
-  );
-};
 
 /* ─── Data ─────────────────────────────────────────────── */
 
@@ -224,29 +196,25 @@ export const Skills = () => {
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         {/* Header Section */}
-        <div className="flex flex-col lg:flex-row lg:items-start justify-between mb-16 gap-8">
-          <div className="max-w-2xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-bold tracking-widest text-slate-400 mb-6 uppercase">
-                My Toolkit
-              </div>
-              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-50 mb-4">
-                Core Capabilities & Technologies
-              </h2>
-              <p className="text-lg text-slate-400 leading-relaxed">
-                Technologies I use to design AI-powered, event-driven automation
-                systems that eliminate manual work and scale enterprise
-                operations.
-              </p>
-            </motion.div>
-          </div>
-
-          <StatsPanel />
+        <div className="max-w-3xl mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-xs font-bold tracking-widest text-slate-400 mb-6 uppercase">
+              My Toolkit
+            </div>
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-50 mb-4">
+              Core Capabilities & Technologies
+            </h2>
+            <p className="text-lg text-slate-400 leading-relaxed">
+              Technologies I use to design AI-powered, event-driven automation
+              systems that eliminate manual work and scale enterprise
+              operations.
+            </p>
+          </motion.div>
         </div>
 
         {/* Skills Grid */}
