@@ -68,22 +68,7 @@ export const Hero = () => {
         </div>
 
         <div className="container mx-auto px-6 relative z-10 text-center">
-          {/* ── Top Badge ── */}
-          <motion.div
-            custom={0}
-            initial="hidden"
-            animate="visible"
-            variants={fadeUp}
-            className="mb-6"
-          >
-            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-sm text-sm text-slate-300">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
-              </span>
-              AI-Powered Automation Engineer · 10+ Years
-            </div>
-          </motion.div>
+
 
           {/* ── Main Heading ── */}
           <motion.h1
@@ -122,7 +107,7 @@ export const Hero = () => {
             variants={fadeUp}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
           >
-            <Link href="/projects">
+            <Link href="/use-cases">
               <motion.div
                 whileHover={{ scale: 1.04, boxShadow: "0 0 30px rgba(59, 130, 246, 0.3)" }}
                 whileTap={{ scale: 0.97 }}
